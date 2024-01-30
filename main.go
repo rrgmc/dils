@@ -4,7 +4,6 @@ import (
 	"archive/tar"
 	"flag"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"slices"
@@ -30,19 +29,12 @@ func main() {
 		log.Fatal(err)
 	}
 
-	var w io.Writer
-	w = os.Stdout
-	// if *uniq {
-	// 	drw := drw.NewWriter(os.Stdout, '\n', drw.NewMapCache(0))
-	// 	w = drw
-	// }
+	w := os.Stdout
 
 	nodes := map[string]*filetree.FileNode{}
 
 	visitor := func(node *filetree.FileNode) error {
 		nodes[node.Path()] = node
-
-		// fmt.Fprintf(w, "%s\t%d\t%s\n", node.Data.FileInfo.Mode.String(), node.Size, node.Path())
 		return nil
 	}
 
