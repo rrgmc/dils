@@ -1,4 +1,4 @@
-module github.com/RangelReale/dils
+module github.com/rrgmc/dils
 
 go 1.21.5
 
