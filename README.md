@@ -1,5 +1,449 @@
 # dils (Docker Image List Files)
 
+# Install
+
+```shell
+$ go install github.com/rrgmc/dils@master
+```
+
+# Run
+
+```shell
+$ dils -u busybox:glibc
+-rwxr-xr-x	0	0	1.1MB	/bin/[
+-rwxr-xr-x	0	0	0	/bin/[[ -> bin/[
+-rwxr-xr-x	0	0	0	/bin/acpid -> bin/[
+-rwxr-xr-x	0	0	0	/bin/add-shell -> bin/[
+-rwxr-xr-x	0	0	0	/bin/addgroup -> bin/[
+-rwxr-xr-x	0	0	0	/bin/adduser -> bin/[
+-rwxr-xr-x	0	0	0	/bin/adjtimex -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ar -> bin/[
+-rwxr-xr-x	0	0	0	/bin/arch -> bin/[
+-rwxr-xr-x	0	0	0	/bin/arp -> bin/[
+-rwxr-xr-x	0	0	0	/bin/arping -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ascii -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ash -> bin/[
+-rwxr-xr-x	0	0	0	/bin/awk -> bin/[
+-rwxr-xr-x	0	0	0	/bin/base32 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/base64 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/basename -> bin/[
+-rwxr-xr-x	0	0	0	/bin/bc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/beep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/blkdiscard -> bin/[
+-rwxr-xr-x	0	0	0	/bin/blkid -> bin/[
+-rwxr-xr-x	0	0	0	/bin/blockdev -> bin/[
+-rwxr-xr-x	0	0	0	/bin/bootchartd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/brctl -> bin/[
+-rwxr-xr-x	0	0	0	/bin/bunzip2 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/busybox -> bin/[
+-rwxr-xr-x	0	0	0	/bin/bzcat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/bzip2 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cal -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chattr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chgrp -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chmod -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chown -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chpasswd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chpst -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chroot -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chrt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/chvt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cksum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/clear -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cmp -> bin/[
+-rwxr-xr-x	0	0	0	/bin/comm -> bin/[
+-rwxr-xr-x	0	0	0	/bin/conspy -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cp -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cpio -> bin/[
+-rwxr-xr-x	0	0	0	/bin/crc32 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/crond -> bin/[
+-rwxr-xr-x	0	0	0	/bin/crontab -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cryptpw -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cttyhack -> bin/[
+-rwxr-xr-x	0	0	0	/bin/cut -> bin/[
+-rwxr-xr-x	0	0	0	/bin/date -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/deallocvt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/delgroup -> bin/[
+-rwxr-xr-x	0	0	0	/bin/deluser -> bin/[
+-rwxr-xr-x	0	0	0	/bin/depmod -> bin/[
+-rwxr-xr-x	0	0	0	/bin/devmem -> bin/[
+-rwxr-xr-x	0	0	0	/bin/df -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dhcprelay -> bin/[
+-rwxr-xr-x	0	0	0	/bin/diff -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dirname -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dmesg -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dnsd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dnsdomainname -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dos2unix -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dpkg -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dpkg-deb -> bin/[
+-rwxr-xr-x	0	0	0	/bin/du -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dumpkmap -> bin/[
+-rwxr-xr-x	0	0	0	/bin/dumpleases -> bin/[
+-rwxr-xr-x	0	0	0	/bin/echo -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ed -> bin/[
+-rwxr-xr-x	0	0	0	/bin/egrep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/eject -> bin/[
+-rwxr-xr-x	0	0	0	/bin/env -> bin/[
+-rwxr-xr-x	0	0	0	/bin/envdir -> bin/[
+-rwxr-xr-x	0	0	0	/bin/envuidgid -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ether-wake -> bin/[
+-rwxr-xr-x	0	0	0	/bin/expand -> bin/[
+-rwxr-xr-x	0	0	0	/bin/expr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/factor -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fakeidentd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fallocate -> bin/[
+-rwxr-xr-x	0	0	0	/bin/false -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fatattr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fbset -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fbsplash -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fdflush -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fdformat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fdisk -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fgconsole -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fgrep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/find -> bin/[
+-rwxr-xr-x	0	0	0	/bin/findfs -> bin/[
+-rwxr-xr-x	0	0	0	/bin/flock -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fold -> bin/[
+-rwxr-xr-x	0	0	0	/bin/free -> bin/[
+-rwxr-xr-x	0	0	0	/bin/freeramdisk -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fsck -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fsck.minix -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fsfreeze -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fstrim -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fsync -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ftpd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ftpget -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ftpput -> bin/[
+-rwxr-xr-x	0	0	0	/bin/fuser -> bin/[
+-rwxr-xr-x	0	0	68kB	/bin/getconf
+-rwxr-xr-x	0	0	0	/bin/getopt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/getty -> bin/[
+-rwxr-xr-x	0	0	0	/bin/grep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/groups -> bin/[
+-rwxr-xr-x	0	0	0	/bin/gunzip -> bin/[
+-rwxr-xr-x	0	0	0	/bin/gzip -> bin/[
+-rwxr-xr-x	0	0	0	/bin/halt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hdparm -> bin/[
+-rwxr-xr-x	0	0	0	/bin/head -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hexdump -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hexedit -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hostid -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hostname -> bin/[
+-rwxr-xr-x	0	0	0	/bin/httpd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hush -> bin/[
+-rwxr-xr-x	0	0	0	/bin/hwclock -> bin/[
+-rwxr-xr-x	0	0	0	/bin/i2cdetect -> bin/[
+-rwxr-xr-x	0	0	0	/bin/i2cdump -> bin/[
+-rwxr-xr-x	0	0	0	/bin/i2cget -> bin/[
+-rwxr-xr-x	0	0	0	/bin/i2cset -> bin/[
+-rwxr-xr-x	0	0	0	/bin/i2ctransfer -> bin/[
+-rwxr-xr-x	0	0	0	/bin/id -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ifconfig -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ifdown -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ifenslave -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ifplugd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ifup -> bin/[
+-rwxr-xr-x	0	0	0	/bin/inetd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/init -> bin/[
+-rwxr-xr-x	0	0	0	/bin/insmod -> bin/[
+-rwxr-xr-x	0	0	0	/bin/install -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ionice -> bin/[
+-rwxr-xr-x	0	0	0	/bin/iostat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ip -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ipaddr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ipcalc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ipcrm -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ipcs -> bin/[
+-rwxr-xr-x	0	0	0	/bin/iplink -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ipneigh -> bin/[
+-rwxr-xr-x	0	0	0	/bin/iproute -> bin/[
+-rwxr-xr-x	0	0	0	/bin/iprule -> bin/[
+-rwxr-xr-x	0	0	0	/bin/iptunnel -> bin/[
+-rwxr-xr-x	0	0	0	/bin/kbd_mode -> bin/[
+-rwxr-xr-x	0	0	0	/bin/kill -> bin/[
+-rwxr-xr-x	0	0	0	/bin/killall -> bin/[
+-rwxr-xr-x	0	0	0	/bin/killall5 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/klogd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/last -> bin/[
+-rwxr-xr-x	0	0	0	/bin/less -> bin/[
+-rwxr-xr-x	0	0	0	/bin/link -> bin/[
+-rwxr-xr-x	0	0	0	/bin/linux32 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/linux64 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/linuxrc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ln -> bin/[
+-rwxr-xr-x	0	0	0	/bin/loadfont -> bin/[
+-rwxr-xr-x	0	0	0	/bin/loadkmap -> bin/[
+-rwxr-xr-x	0	0	0	/bin/logger -> bin/[
+-rwxr-xr-x	0	0	0	/bin/login -> bin/[
+-rwxr-xr-x	0	0	0	/bin/logname -> bin/[
+-rwxr-xr-x	0	0	0	/bin/logread -> bin/[
+-rwxr-xr-x	0	0	0	/bin/losetup -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lpd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lpq -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lpr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ls -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lsattr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lsmod -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lsof -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lspci -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lsscsi -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lsusb -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lzcat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lzma -> bin/[
+-rwxr-xr-x	0	0	0	/bin/lzop -> bin/[
+-rwxr-xr-x	0	0	0	/bin/makedevs -> bin/[
+-rwxr-xr-x	0	0	0	/bin/makemime -> bin/[
+-rwxr-xr-x	0	0	0	/bin/man -> bin/[
+-rwxr-xr-x	0	0	0	/bin/md5sum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mdev -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mesg -> bin/[
+-rwxr-xr-x	0	0	0	/bin/microcom -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mim -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkdir -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkdosfs -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mke2fs -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkfifo -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkfs.ext2 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkfs.minix -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkfs.vfat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mknod -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkpasswd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mkswap -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mktemp -> bin/[
+-rwxr-xr-x	0	0	0	/bin/modinfo -> bin/[
+-rwxr-xr-x	0	0	0	/bin/modprobe -> bin/[
+-rwxr-xr-x	0	0	0	/bin/more -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mount -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mountpoint -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mpstat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/mv -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nameif -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nanddump -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nandwrite -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nbd-client -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/netstat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nice -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nl -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nmeter -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nohup -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nologin -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nproc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nsenter -> bin/[
+-rwxr-xr-x	0	0	0	/bin/nslookup -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ntpd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/od -> bin/[
+-rwxr-xr-x	0	0	0	/bin/openvt -> bin/[
+-rwxr-xr-x	0	0	0	/bin/partprobe -> bin/[
+-rwxr-xr-x	0	0	0	/bin/passwd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/paste -> bin/[
+-rwxr-xr-x	0	0	0	/bin/patch -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pgrep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pidof -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ping -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ping6 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pipe_progress -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pivot_root -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pkill -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pmap -> bin/[
+-rwxr-xr-x	0	0	0	/bin/popmaildir -> bin/[
+-rwxr-xr-x	0	0	0	/bin/poweroff -> bin/[
+-rwxr-xr-x	0	0	0	/bin/powertop -> bin/[
+-rwxr-xr-x	0	0	0	/bin/printenv -> bin/[
+-rwxr-xr-x	0	0	0	/bin/printf -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ps -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pscan -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pstree -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pwd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/pwdx -> bin/[
+-rwxr-xr-x	0	0	0	/bin/raidautorun -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rdate -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rdev -> bin/[
+-rwxr-xr-x	0	0	0	/bin/readahead -> bin/[
+-rwxr-xr-x	0	0	0	/bin/readlink -> bin/[
+-rwxr-xr-x	0	0	0	/bin/readprofile -> bin/[
+-rwxr-xr-x	0	0	0	/bin/realpath -> bin/[
+-rwxr-xr-x	0	0	0	/bin/reboot -> bin/[
+-rwxr-xr-x	0	0	0	/bin/reformime -> bin/[
+-rwxr-xr-x	0	0	0	/bin/remove-shell -> bin/[
+-rwxr-xr-x	0	0	0	/bin/renice -> bin/[
+-rwxr-xr-x	0	0	0	/bin/reset -> bin/[
+-rwxr-xr-x	0	0	0	/bin/resize -> bin/[
+-rwxr-xr-x	0	0	0	/bin/resume -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rev -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rm -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rmdir -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rmmod -> bin/[
+-rwxr-xr-x	0	0	0	/bin/route -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rpm -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rpm2cpio -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rtcwake -> bin/[
+-rwxr-xr-x	0	0	0	/bin/run-init -> bin/[
+-rwxr-xr-x	0	0	0	/bin/run-parts -> bin/[
+-rwxr-xr-x	0	0	0	/bin/runlevel -> bin/[
+-rwxr-xr-x	0	0	0	/bin/runsv -> bin/[
+-rwxr-xr-x	0	0	0	/bin/runsvdir -> bin/[
+-rwxr-xr-x	0	0	0	/bin/rx -> bin/[
+-rwxr-xr-x	0	0	0	/bin/script -> bin/[
+-rwxr-xr-x	0	0	0	/bin/scriptreplay -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sed -> bin/[
+-rwxr-xr-x	0	0	0	/bin/seedrng -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sendmail -> bin/[
+-rwxr-xr-x	0	0	0	/bin/seq -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setarch -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setconsole -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setfattr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setfont -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setkeycodes -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setlogcons -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setpriv -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setserial -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setsid -> bin/[
+-rwxr-xr-x	0	0	0	/bin/setuidgid -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sh -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sha1sum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sha256sum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sha3sum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sha512sum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/showkey -> bin/[
+-rwxr-xr-x	0	0	0	/bin/shred -> bin/[
+-rwxr-xr-x	0	0	0	/bin/shuf -> bin/[
+-rwxr-xr-x	0	0	0	/bin/slattach -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sleep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/smemcap -> bin/[
+-rwxr-xr-x	0	0	0	/bin/softlimit -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sort -> bin/[
+-rwxr-xr-x	0	0	0	/bin/split -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ssl_client -> bin/[
+-rwxr-xr-x	0	0	0	/bin/start-stop-daemon -> bin/[
+-rwxr-xr-x	0	0	0	/bin/stat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/strings -> bin/[
+-rwxr-xr-x	0	0	0	/bin/stty -> bin/[
+-rwxr-xr-x	0	0	0	/bin/su -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sulogin -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sum -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sv -> bin/[
+-rwxr-xr-x	0	0	0	/bin/svc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/svlogd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/svok -> bin/[
+-rwxr-xr-x	0	0	0	/bin/swapoff -> bin/[
+-rwxr-xr-x	0	0	0	/bin/swapon -> bin/[
+-rwxr-xr-x	0	0	0	/bin/switch_root -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sync -> bin/[
+-rwxr-xr-x	0	0	0	/bin/sysctl -> bin/[
+-rwxr-xr-x	0	0	0	/bin/syslogd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tac -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tail -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tar -> bin/[
+-rwxr-xr-x	0	0	0	/bin/taskset -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tcpsvd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tee -> bin/[
+-rwxr-xr-x	0	0	0	/bin/telnet -> bin/[
+-rwxr-xr-x	0	0	0	/bin/telnetd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/test -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tftp -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tftpd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/time -> bin/[
+-rwxr-xr-x	0	0	0	/bin/timeout -> bin/[
+-rwxr-xr-x	0	0	0	/bin/top -> bin/[
+-rwxr-xr-x	0	0	0	/bin/touch -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tr -> bin/[
+-rwxr-xr-x	0	0	0	/bin/traceroute -> bin/[
+-rwxr-xr-x	0	0	0	/bin/traceroute6 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tree -> bin/[
+-rwxr-xr-x	0	0	0	/bin/true -> bin/[
+-rwxr-xr-x	0	0	0	/bin/truncate -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ts -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tsort -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tty -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ttysize -> bin/[
+-rwxr-xr-x	0	0	0	/bin/tunctl -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubiattach -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubidetach -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubimkvol -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubirename -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubirmvol -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubirsvol -> bin/[
+-rwxr-xr-x	0	0	0	/bin/ubiupdatevol -> bin/[
+-rwxr-xr-x	0	0	0	/bin/udhcpc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/udhcpc6 -> bin/[
+-rwxr-xr-x	0	0	0	/bin/udhcpd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/udpsvd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/uevent -> bin/[
+-rwxr-xr-x	0	0	0	/bin/umount -> bin/[
+-rwxr-xr-x	0	0	0	/bin/uname -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unexpand -> bin/[
+-rwxr-xr-x	0	0	0	/bin/uniq -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unix2dos -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unlink -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unlzma -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unshare -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unxz -> bin/[
+-rwxr-xr-x	0	0	0	/bin/unzip -> bin/[
+-rwxr-xr-x	0	0	0	/bin/uptime -> bin/[
+-rwxr-xr-x	0	0	0	/bin/users -> bin/[
+-rwxr-xr-x	0	0	0	/bin/usleep -> bin/[
+-rwxr-xr-x	0	0	0	/bin/uudecode -> bin/[
+-rwxr-xr-x	0	0	0	/bin/uuencode -> bin/[
+-rwxr-xr-x	0	0	0	/bin/vconfig -> bin/[
+-rwxr-xr-x	0	0	0	/bin/vi -> bin/[
+-rwxr-xr-x	0	0	0	/bin/vlock -> bin/[
+-rwxr-xr-x	0	0	0	/bin/volname -> bin/[
+-rwxr-xr-x	0	0	0	/bin/w -> bin/[
+-rwxr-xr-x	0	0	0	/bin/wall -> bin/[
+-rwxr-xr-x	0	0	0	/bin/watch -> bin/[
+-rwxr-xr-x	0	0	0	/bin/watchdog -> bin/[
+-rwxr-xr-x	0	0	0	/bin/wc -> bin/[
+-rwxr-xr-x	0	0	0	/bin/wget -> bin/[
+-rwxr-xr-x	0	0	0	/bin/which -> bin/[
+-rwxr-xr-x	0	0	0	/bin/who -> bin/[
+-rwxr-xr-x	0	0	0	/bin/whoami -> bin/[
+-rwxr-xr-x	0	0	0	/bin/whois -> bin/[
+-rwxr-xr-x	0	0	0	/bin/xargs -> bin/[
+-rwxr-xr-x	0	0	0	/bin/xxd -> bin/[
+-rwxr-xr-x	0	0	0	/bin/xz -> bin/[
+-rwxr-xr-x	0	0	0	/bin/xzcat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/yes -> bin/[
+-rwxr-xr-x	0	0	0	/bin/zcat -> bin/[
+-rwxr-xr-x	0	0	0	/bin/zcip -> bin/[
+drwxr-xr-x	0	0	-	/dev
+-rw-r--r--	0	0	306B	/etc/group
+-rw-r--r--	0	0	114B	/etc/localtime
+drwxr-xr-x	0	0	-	/etc/network/if-down.d
+drwxr-xr-x	0	0	-	/etc/network/if-post-down.d
+drwxr-xr-x	0	0	-	/etc/network/if-pre-up.d
+drwxr-xr-x	0	0	-	/etc/network/if-up.d
+-rw-r--r--	0	0	494B	/etc/nsswitch.conf
+-rw-r--r--	0	0	340B	/etc/passwd
+-rw-------	0	0	136B	/etc/shadow
+drwxr-xr-x	65534	65534	-	/home
+-rwxr-xr-x	0	0	203kB	/lib/ld-linux-aarch64.so.1
+-rwxr-xr-x	0	0	1.7MB	/lib/libc.so.6
+-rw-r--r--	0	0	592kB	/lib/libm.so.6
+-rw-r--r--	0	0	68kB	/lib/libnss_compat.so.2
+-rw-r--r--	0	0	68kB	/lib/libnss_dns.so.2
+-rw-r--r--	0	0	68kB	/lib/libnss_files.so.2
+-rw-r--r--	0	0	68kB	/lib/libnss_hesiod.so.2
+-rw-r--r--	0	0	68kB	/lib/libpthread.so.0
+-rw-r--r--	0	0	68kB	/lib/libresolv.so.2
+Lrwxrwxrwx	0	0	0	/lib64 -> lib
+drwx------	0	0	-	/root
+dtrwxrwxrwx	0	0	-	/tmp
+Lrwxrwxrwx	0	0	0	/usr/bin/env -> ../../bin/env
+drwxr-xr-x	1	1	-	/usr/sbin
+drwxr-xr-x	8	8	-	/var/spool/mail
+drwxr-xr-x	0	0	-	/var/www
+```
+
 # Author
 
 Rangel Reale (rangelreale@gmail.com)
